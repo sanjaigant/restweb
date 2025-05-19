@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Menu - Bite & Bliss</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+    }
+
+    header {
+      background-color:black;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      color: #cce7cc;
+    }
+
+    .menu-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 40px;
+    }
+
+    .menu-list li {
+      background-color: #e8f0e8;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(46, 139, 87, 0.2);
+    }
+
+    .menu-list img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .menu-list li p {
+      margin-top: 10px;
+      font-size: 16px;
+      color: black;
+      font-weight: bold;
+    }
+
+    footer {
+      background: black;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Our Menu</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="administration.html">Admin</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <ul class="menu-list">
+    <li><img src="Screenshot 2025-05-18 220545.png" alt="Biryani" /><p>Biryani - $12</p></li>
+    <li><img src="Screenshot 2025-05-18 220818.png" alt="Pizza" /><p>Pizza - $10</p></li>
+    <li><img src="Screenshot 2025-05-18 220901.png" alt="Tandoori" /><p>Tandoori - $9</p></li>
+    <li><img src="Screenshot 2025-05-18 220939.png" alt="Dessert" /><p>Dessert - $6</p></li>
+    <li><img src="Screenshot 2025-05-18 221019.png" alt="Fish Fry" /><p>Fish Fry - $8</p></li>
+    <li><img src="Screenshot 2025-05-18 221102.png" alt="Paratha" /><p>Paratha - $5</p></li>
+    <!-- Additional Dishes -->
+    <li><img src="Screenshot 2025-05-18 221131.png" alt="Noodles" /><p>Schezwan Noodles - $9</p></li>
+    <li><img src="Screenshot 2025-05-18 221539.png" alt="Burger" /><p>Cheese Burger - $7</p></li>
+    <li><img src="Screenshot 2025-05-18 221606.png" alt="Pasta" /><p>White Sauce Pasta - $8</p></li>
+    <li><img src="Screenshot 2025-05-18 221653.png" alt="Ice Cream" /><p>Vanilla Ice Cream - $4</p></li>
+    <li><img src="Screenshot 2025-05-18 221728.png" alt="Paneer Tikka" /><p>Paneer Tikka - $7</p></li>
+    <li><img src="Screenshot 2025-05-18 221807.png" alt="Milkshake" /><p>Chocolate Milkshake - $5</p></li>
+  </ul>
+
+  <footer>
+    &copy; 2025 Bite & Bliss
+  </footer>
+</body>
+</html>

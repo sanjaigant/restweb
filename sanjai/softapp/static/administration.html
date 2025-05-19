@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Administration - Bite & Bliss</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e8f0e8;
+      color: #2e8b57;
+      margin: 0;
+    }
+
+    header {
+      background-color: black;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      list-style: none;
+      padding: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #cce7cc;
+    }
+
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 100px;
+      padding: 80px;
+    }
+
+    .member {
+      background-color:black;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(46, 139, 87, 0.2);
+      color:white ;
+    }
+
+    .member img {
+      width: 200px;
+      height: 200px;
+      border: 50%;
+      object-fit: cover;
+      border: 3px solid black ;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Administration Team</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="administration.html">Admin</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="team">
+    <div class="member">
+      <img src="Screenshot 2025-05-18 225617.png" alt="CEO" />
+      <h3>rajini</h3>
+      <p>CEO</p>
+    </div>
+    <div class="member">
+      <img src="Screenshot 2025-05-18 225707.png" alt="Marketing" />
+      <h3>kamal</h3>
+      <p> Manager</p>
+    </div>
+    <div class="member">
+      <img src="Screenshot 2025-05-18 225845.png" alt="HR" />
+      <h3>ajith</h3>
+      <p>head chef</p>
+    </div>
+    <div class="member">
+        <img src="Screenshot 2025-05-18 225727.png" alt="HR" />
+        <h3>vijay</h3>
+        <p>Accountant</p>
+      </div>
+     
+    <!-- Add more team members as needed -->
+  </div>
+</body>
+</html>

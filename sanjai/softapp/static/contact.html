@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us -Bite and bliss</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .nav-bar {
+      background-color: black;
+      color: white;
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-bar h1 {
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .menu {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    .menu li a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .menu li a:hover {
+      color: #cce7cc;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      min-height: 80vh;
+    }
+
+    .contact-form {
+      flex: 1;
+      padding: 60px;
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .contact-form h2 {
+      color: black;
+      margin-bottom: 20px;
+    }
+
+    .input-group {
+      position: relative;
+      margin-bottom: 25px;
+    }
+
+    .input-group input,
+    .input-group textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      outline: none;
+      font-size: 16px;
+      background: none;
+      transition: 0.3s ease;
+    }
+
+    .input-group label {
+      position: absolute;
+      left: 12px;
+      top: 12px;
+      color: #777;
+      background-color: #fff;
+      padding: 0 5px;
+      transition: 0.3s;
+      pointer-events: none;
+    }
+
+    .input-group input:focus + label,
+    .input-group input:not(:placeholder-shown) + label,
+    .input-group textarea:focus + label,
+    .input-group textarea:not(:placeholder-shown) + label {
+      top: -10px;
+      font-size: 13px;
+      color: black;
+    }
+
+    .input-group textarea {
+      resize: vertical;
+      height: 100px;
+    }
+
+    .contact-form button {
+      padding: 12px 24px;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: black;
+    }
+
+    .map-container {
+      flex: 1;
+      min-height: 400px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .contact-form, .map-container {
+        padding: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="nav-bar">
+    <h1>Bite and Bliss</h1>
+    <ul class="menu">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="administration.html">Admin</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <div class="contact-form">
+      <h2>We’d love to hear from you</h2>
+      <form>
+        <div class="input-group">
+          <input type="text" id="name" placeholder=" " required>
+          <label for="name">Your Name</label>
+        </div>
+        <div class="input-group">
+          <input type="email" id="email" placeholder=" " required>
+          <label for="email">Email Address</label>
+        </div>
+        <div class="input-group">
+          <textarea id="message" placeholder=" " required></textarea>
+          <label for="message">Your Message</label>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126743.07990295646!2d80.17922141851636!3d13.047807587338875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5266597f10b8b5%3A0xf8be8d527aa195eb!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1684948179397!5m2!1sen!2sin" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</body>
+</html>
